@@ -42,12 +42,13 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
--- vim.api.nvim_create_autocmd({ "FileType" }, {
---   pattern = { "r", "R", "Rmd", "rmd" },
---   callback = function()
--- I want to change this so that the local leader is "space", but doesn't cause conflicts with which key.
--- I also dont which key to turn off
--- }
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "r", "R", "Rmd", "rmd" },
+  callback = function()
+  vim.g.maplocalleader = "\\"
+  end,
+})
+
 vim.cmd "autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif"
 -- vim.api.nvim_create_autocmd({ "BufEnter" }, {
 --   callback = function()
