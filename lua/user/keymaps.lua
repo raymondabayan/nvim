@@ -53,6 +53,9 @@ keymap("v", ">", ">gv", opts)
 -- keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 -- keymap("v", "p", '"_dP', opts)
 
+-- Use jk to quickly enter normal mode from insert mode
+keymap("i", "jk", "<ESC>", opts)
+
 -- Visual Block --
 -- Move text up and down
 -- keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
