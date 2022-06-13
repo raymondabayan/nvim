@@ -145,7 +145,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-path"
   },
   ["cmp-tabnine"] = {
-    config = { "\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\14max_lines\3è\a\27run_on_every_keystroke\2\24snippet_placeholder\a..\tsort\2\20max_num_results\3\20\nsetup\23cmp_tabnine.config\frequire\0" },
+    config = { "\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\20max_num_results\3\20\tsort\2\14max_lines\3è\a\24snippet_placeholder\a..\27run_on_every_keystroke\2\nsetup\23cmp_tabnine.config\frequire\0" },
     loaded = true,
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
     url = "https://github.com/tzachar/cmp-tabnine"
@@ -422,6 +422,11 @@ _G.packer_plugins = {
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/sniprun",
     url = "https://github.com/michaelb/sniprun"
   },
+  ["surround.nvim"] = {
+    loaded = true,
+    path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/surround.nvim",
+    url = "https://github.com/Mephistophiles/surround.nvim"
+  },
   ["symbols-outline.nvim"] = {
     loaded = true,
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
@@ -500,18 +505,13 @@ _G.packer_plugins = {
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/vim-repeat",
     url = "https://github.com/tpope/vim-repeat"
   },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
-  },
   ["vim-table-mode"] = {
     loaded = true,
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/vim-table-mode",
     url = "https://github.com/dhruvasagar/vim-table-mode"
   },
   vimwiki = {
-    config = { "\27LJ\2\n¿\1\0\0\3\0\6\0\v6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0K\0\1\0\1\0\3\14.markdown\rmarkdown\b.md\rmarkdown\v.mdown\rmarkdown\23vimwiki_ext2syntax\1\0\3\vsyntax\rmarkdown\bext\b.md\tpath\23~/Dropbox/vimwiki/\17vimwiki_list\6g\bvim\0" },
+    config = { "\27LJ\2\n¿\1\0\0\3\0\6\0\v6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0K\0\1\0\1\0\3\v.mdown\rmarkdown\14.markdown\rmarkdown\b.md\rmarkdown\23vimwiki_ext2syntax\1\0\3\bext\b.md\vsyntax\rmarkdown\tpath\23~/Dropbox/vimwiki/\17vimwiki_list\6g\bvim\0" },
     loaded = true,
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
@@ -530,18 +530,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: cmp-tabnine
-time([[Config for cmp-tabnine]], true)
-try_loadstring("\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\14max_lines\3è\a\27run_on_every_keystroke\2\24snippet_placeholder\a..\tsort\2\20max_num_results\3\20\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
-time([[Config for cmp-tabnine]], false)
--- Config for: vimwiki
-time([[Config for vimwiki]], true)
-try_loadstring("\27LJ\2\n¿\1\0\0\3\0\6\0\v6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0K\0\1\0\1\0\3\14.markdown\rmarkdown\b.md\rmarkdown\v.mdown\rmarkdown\23vimwiki_ext2syntax\1\0\3\vsyntax\rmarkdown\bext\b.md\tpath\23~/Dropbox/vimwiki/\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
-time([[Config for vimwiki]], false)
 -- Config for: which-key.nvim
 time([[Config for which-key.nvim]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
 time([[Config for which-key.nvim]], false)
+-- Config for: cmp-tabnine
+time([[Config for cmp-tabnine]], true)
+try_loadstring("\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\20max_num_results\3\20\tsort\2\14max_lines\3è\a\24snippet_placeholder\a..\27run_on_every_keystroke\2\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
+time([[Config for cmp-tabnine]], false)
+-- Config for: vimwiki
+time([[Config for vimwiki]], true)
+try_loadstring("\27LJ\2\n¿\1\0\0\3\0\6\0\v6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0K\0\1\0\1\0\3\v.mdown\rmarkdown\14.markdown\rmarkdown\b.md\rmarkdown\23vimwiki_ext2syntax\1\0\3\bext\b.md\vsyntax\rmarkdown\tpath\23~/Dropbox/vimwiki/\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
+time([[Config for vimwiki]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)

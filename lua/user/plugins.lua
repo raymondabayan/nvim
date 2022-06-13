@@ -62,7 +62,7 @@ return packer.startup(function(use)
   -- Vim tools
   use "tpope/vim-repeat" -- allows to repeat command in normal mode with '.'
   use "tpope/vim-commentary" -- quickly comment/uncomment with 'gc'
-  use "tpope/vim-surround" -- quickly surround text with ',",{,{,(
+  use "Mephistophiles/surround.nvim" -- quickly surround text with ',",{,{,(
   use "antoinemadec/FixCursorHold.nvim" -- fixes lags with cursor hold when highlighting
   -- use "lervag/vimtex" -- export .tex files to pdf (maybe use emacs for this instead)
   use "moll/vim-bbye" -- close buffers without closing all buffers
