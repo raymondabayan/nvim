@@ -70,12 +70,6 @@ vim.api.nvim_create_autocmd({ "CmdWinEnter" }, {
   end,
 })
 
---vim.api.nvim_create_autocmd({ "CursorMoved", "BufWinEnter", "BufFilePost", "InsertEnter", "BufWritePost" }, {
---  callback = function()
---    require("user.winbar").get_winbar()
---  end,
---})
-
 vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
   callback = function()
     vim.cmd "set formatoptions-=cro"
@@ -100,3 +94,6 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, {
     vim.cmd "hi link illuminatedWord LspReferenceText"
   end,
 })
+
+vim.api.nvim_exec([[ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif ]], false)
+

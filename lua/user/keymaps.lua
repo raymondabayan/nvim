@@ -55,6 +55,7 @@ keymap("v", ">", ">gv", opts)
 
 -- Use jk to quickly enter normal mode from insert mode
 keymap("i", "jk", "<ESC>", opts)
+keymap("i", "kj", "<ESC>", opts)
 
 -- Visual Block --
 -- Move text up and down
