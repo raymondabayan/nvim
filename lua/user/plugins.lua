@@ -149,6 +149,8 @@ return packer.startup(function(use)
   -- use "vim-ruby/vim-ruby"
 
   -- Org Mode
+
+
   use "nvim-orgmode/orgmode" -- The one and only
   use "akinsho/org-bullets.nvim" -- fancy bullets for org files
   use { "michaelb/sniprun", run = "bash ./install.sh" } -- run code blocks

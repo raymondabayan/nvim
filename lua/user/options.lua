@@ -58,3 +58,5 @@ vim.filetype.add({
       conf = "dosini",
   },
 })
+
+vim.cmd [[let R_assign=1]]
