@@ -150,25 +150,24 @@ return packer.startup(function(use)
 
   -- Org Mode
 
-  use {
-    "nvim-neorg/neorg",
-    config = function()
-        require('neorg').setup {
-            load = {
-        ["core.defaults"] = {},
-        ["core.norg.dirman"] = {},
-        ["core.presenter"] = {},-- check out setup part...
-        ["core.norg.completion"] = {},
-        ["core.gtd.base"] = {},
-        ["core.norg.qol.toc"] = {},
-        ["core.norg.journal"] = {},
-        ["core.presenter"] = {},
-        ["core.export"] = {}
-        }
-      }
-    end,
-    requires = "nvim-lua/plenary.nvim"
-}
+  -- use {
+  --   "nvim-neorg/neorg",
+  --   config = function()
+  --       require('neorg').setup {
+  --           load = {
+  --       ["core.defaults"] = {},
+  --       ["core.norg.dirman"] = {},
+  --       ["core.norg.completion"] = {},
+  --       ["core.gtd.base"] = {},
+  --       ["core.norg.qol.toc"] = {},
+  --       ["core.norg.journal"] = {},
+  --       ["core.presenter"] = {},
+  --       ["core.export"] = {}
+  --       }
+  --     }
+  --   end,
+  --   requires = "nvim-lua/plenary.nvim"
+-- }
 
   use "nvim-orgmode/orgmode" -- The one and only
   use "akinsho/org-bullets.nvim" -- fancy bullets for org files
