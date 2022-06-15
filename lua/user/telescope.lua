@@ -27,7 +27,7 @@ telescope.setup {
         ["<Down>"] = actions.move_selection_next,
         ["<Up>"] = actions.move_selection_previous,
 
-        ["<CR>"] = actions.select_default,
+        ["<Tab>"] = actions.select_default,
         ["<C-s>"] = actions.select_horizontal,
         ["<C-v>"] = actions.select_vertical,
         ["<C-t>"] = actions.select_tab,
@@ -40,8 +40,8 @@ telescope.setup {
         ["<PageUp>"] = actions.results_scrolling_up,
         ["<PageDown>"] = actions.results_scrolling_down,
 
-        ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
-        ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
+        -- ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
+        -- ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
         ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
         ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
         ["<C-l>"] = actions.complete_tag,
@@ -50,13 +50,13 @@ telescope.setup {
 
       n = {
         ["<esc>"] = actions.close,
-        ["<CR>"] = actions.select_default,
+        ["<Tab>"] = actions.select_default,
         ["<C-x>"] = actions.select_horizontal,
         ["<C-v>"] = actions.select_vertical,
         ["<C-t>"] = actions.select_tab,
 
-        ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
-        ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
+        -- ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
+        -- ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
         ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
         ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
 
@@ -98,7 +98,8 @@ telescope.setup {
       find_cmd = "rg", -- find command (defaults to `fd`)
     },
     file_browser = {
-      -- theme = "ivy",
+      theme = "ivy",
+      hijack_netrw = true,
       -- require("telescope.themes").get_dropdown {
       --   previewer = false,
       --   -- even more opts
