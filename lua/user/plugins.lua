@@ -155,15 +155,15 @@ return packer.startup(function(use)
     config = function()
         require('neorg').setup {
             load = {
-        ["core.defaults"] = {}
-        -- ["core.norg.dirman"] = {},
-        -- ["core.presenter"] = {},-- check out setup part...
-        -- ["core.norg.completion"] = {},
-        -- ["core.gtd.base"] = {},
-        -- ["core.norg.qol.toc"] = {},
-        -- ["core.norg.journal"] = {},
-        -- ["core.presenter"] = {},
-        -- ["core.export"] = {}
+        ["core.defaults"] = {},
+        ["core.norg.dirman"] = {},
+        ["core.presenter"] = {},-- check out setup part...
+        ["core.norg.completion"] = {},
+        ["core.gtd.base"] = {},
+        ["core.norg.qol.toc"] = {},
+        ["core.norg.journal"] = {},
+        ["core.presenter"] = {},
+        ["core.export"] = {}
         }
       }
     end,

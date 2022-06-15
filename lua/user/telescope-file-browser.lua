@@ -11,7 +11,7 @@ require("telescope").setup {
           -- your custom insert mode mappings
         },
         ["n"] = {
-          -- your custom normal mode mappings
+      -- your custom normal mode mappings
         },
       },
     },
