@@ -59,4 +59,4 @@ vim.filetype.add({
   },
 })
 
-vim.cmd [[let R_assign=1]]
+vim.cmd [[let R_assign=0]]
