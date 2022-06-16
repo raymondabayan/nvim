@@ -90,9 +90,7 @@ local m_opts = {
 local m_mappings = {
   -- c = { "<cmd>BookmarkClear<cr>", "Clear" },
   -- m = { "<cmd>BookmarkToggle<cr>", "Toggle" },
-  h = { '<cmd>lua require("harpoon.mark").add_file()<cr>', "Harpoon" },
   -- x = { "<cmd>BookmarkClearAll<cr>", "Clear All" },
-  u = { '<cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>', "Harpoon UI" },
   -- j = { "<cmd>BookmarkNext<cr>", "Next" },
   -- k = { "<cmd>BookmarkPrev<cr>", "Prev" },
   -- s = { "<cmd>BookmarkShowAll<cr>", "Prev" },
@@ -104,21 +102,21 @@ local m_mappings = {
 
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-  -- bb = { "<cmd>JABSOpen<cr>", "Buffers" },
+  -- ["bb"] = { "<cmd>JABSOpen<cr>", "Buffers" },
   -- ["b"] = {
   --   "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
   --   "Buffers",
   -- },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  -- ["w"] = { "<cmd>w<CR>", "Write" },
+  ["w"] = { "<cmd>w<CR>", "Write" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No HL" },
-  -- ["q"] = { '<cmd>lua require("user.functions").smart_quit()<CR>', "Quit" },
+  ["q"] = { '<cmd>lua require("user.functions").smart_quit()<CR>', "Quit" },
   -- ["/"] = { '<cmd>lua require("Comment.api").toggle_current_linewise()<CR>', "Comment" },
   ["."] = { ":Telescope file_browser<cr>", "Telescope File Browser"},
   [","] = { ":FZF<cr>", "FZF" },
   --   "Find files",
   -- },
-  -- ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+  ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   -- ["R"] = { '<cmd>lua require("renamer").rename()<cr>', "Rename" },
   ["z"] = { "<cmd>ZenMode<cr>", "Zen" },
@@ -127,7 +125,7 @@ local mappings = {
   b = {
     name = "Buffers",
     b = { "<cmd>JABSOpen<cr>", "List" },
-    c = { "<cmd>Bdelete!<cr>", "Close" },
+    k = { "<cmd>Bdelete!<cr>", "Close" },
     n = { "<cmd>bNext<cr>", "Next" },
     p = { "<cmd>bprevious>", "Previous" },
   },
@@ -173,7 +171,7 @@ local mappings = {
     f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
   },
 
-  d = {
+  D = {
     name = "Debug",
     b = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Breakpoint" },
     c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },

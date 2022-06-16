@@ -110,15 +110,14 @@ return packer.startup(function(use)
   }
 
   -- File Editing Tools
-  use "unblevable/quick-scope" -- allows for fast word finding using f<char> like vim, but better
+  -- use "unblevable/quick-scope" -- allows for fast word finding using f<char> like vim, but better
   use "phaazon/hop.nvim" -- hop to any word or character in a buffer with elegant speed
   use "andymass/vim-matchup" -- allows extension of vim's % function to operate on matching sets of text
   use "nacro90/numb.nvim" -- allows for peeking of certain lines in buffer
   use "monaqa/dial.nvim" -- allows for extension of increment and decrement neovim feature (i.e. 8 -> 9)
   use "windwp/nvim-spectre" -- use regex to find and replace
-  use "ThePrimeagen/harpoon" -- harpoon multiple files and rotate between them
   use "rcarriga/nvim-notify" -- notification popups
-  use { "christianchiarulli/nvim-gps", branch = "text_hl" }
+  -- use { "christianchiarulli/nvim-gps", branch = "text_hl" }
 
   -- Treesitter (parser for languages) & readability improvements
   use {
@@ -134,14 +133,14 @@ return packer.startup(function(use)
   use "hkupty/iron.nvim"
 
   -- R programming
-  use "kevinhwang91/rnvimr"
+  -- use "kevinhwang91/rnvimr"
   use "jalvesaq/Nvim-r"
-  use "ncm2/ncm2"
+  -- use "ncm2/ncm2"
   use "roxma/nvim-yarp"
-  use "gaalcaras/ncm-R"
+  -- use "gaalcaras/ncm-R"
   use "Raimondi/delimitMate"
-  use "ncm2/ncm2-bufword"
-  use "ncm2/ncm2-path"
+  -- use "ncm2/ncm2-bufword"
+  -- use "ncm2/ncm2-path"
   use "roxma/vim-hug-neovim-rpc"
 
   -- Ruby programming

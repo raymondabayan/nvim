@@ -145,7 +145,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-path"
   },
   ["cmp-tabnine"] = {
-    config = { "\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\tsort\2\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\14max_lines\3è\a\nsetup\23cmp_tabnine.config\frequire\0" },
+    config = { "\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\14max_lines\3è\a\tsort\2\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\nsetup\23cmp_tabnine.config\frequire\0" },
     loaded = true,
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
     url = "https://github.com/tzachar/cmp-tabnine"
@@ -210,11 +210,6 @@ _G.packer_plugins = {
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
   },
-  harpoon = {
-    loaded = true,
-    path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/ThePrimeagen/harpoon"
-  },
   ["hop.nvim"] = {
     loaded = true,
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/hop.nvim",
@@ -262,26 +257,6 @@ _G.packer_plugins = {
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
-  ["ncm-R"] = {
-    loaded = true,
-    path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/ncm-R",
-    url = "https://github.com/gaalcaras/ncm-R"
-  },
-  ncm2 = {
-    loaded = true,
-    path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/ncm2",
-    url = "https://github.com/ncm2/ncm2"
-  },
-  ["ncm2-bufword"] = {
-    loaded = true,
-    path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/ncm2-bufword",
-    url = "https://github.com/ncm2/ncm2-bufword"
-  },
-  ["ncm2-path"] = {
-    loaded = true,
-    path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/ncm2-path",
-    url = "https://github.com/ncm2/ncm2-path"
-  },
   ["nlsp-settings.nvim"] = {
     loaded = true,
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",
@@ -326,11 +301,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
-  },
-  ["nvim-gps"] = {
-    loaded = true,
-    path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/nvim-gps",
-    url = "https://github.com/christianchiarulli/nvim-gps"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -406,16 +376,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
-  },
-  ["quick-scope"] = {
-    loaded = true,
-    path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/quick-scope",
-    url = "https://github.com/unblevable/quick-scope"
-  },
-  rnvimr = {
-    loaded = true,
-    path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/rnvimr",
-    url = "https://github.com/kevinhwang91/rnvimr"
   },
   sniprun = {
     loaded = true,
@@ -511,7 +471,7 @@ _G.packer_plugins = {
     url = "https://github.com/dhruvasagar/vim-table-mode"
   },
   vimwiki = {
-    config = { "\27LJ\2\n¿\1\0\0\3\0\6\0\v6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0K\0\1\0\1\0\3\b.md\rmarkdown\v.mdown\rmarkdown\14.markdown\rmarkdown\23vimwiki_ext2syntax\1\0\3\bext\b.md\tpath\23~/Dropbox/vimwiki/\vsyntax\rmarkdown\17vimwiki_list\6g\bvim\0" },
+    config = { "\27LJ\2\n¿\1\0\0\3\0\6\0\v6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0K\0\1\0\1\0\3\14.markdown\rmarkdown\b.md\rmarkdown\v.mdown\rmarkdown\23vimwiki_ext2syntax\1\0\3\tpath\23~/Dropbox/vimwiki/\vsyntax\rmarkdown\bext\b.md\17vimwiki_list\6g\bvim\0" },
     loaded = true,
     path = "/Users/raymondjohn/.local/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
@@ -532,11 +492,11 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: vimwiki
 time([[Config for vimwiki]], true)
-try_loadstring("\27LJ\2\n¿\1\0\0\3\0\6\0\v6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0K\0\1\0\1\0\3\b.md\rmarkdown\v.mdown\rmarkdown\14.markdown\rmarkdown\23vimwiki_ext2syntax\1\0\3\bext\b.md\tpath\23~/Dropbox/vimwiki/\vsyntax\rmarkdown\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
+try_loadstring("\27LJ\2\n¿\1\0\0\3\0\6\0\v6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0K\0\1\0\1\0\3\14.markdown\rmarkdown\b.md\rmarkdown\v.mdown\rmarkdown\23vimwiki_ext2syntax\1\0\3\tpath\23~/Dropbox/vimwiki/\vsyntax\rmarkdown\bext\b.md\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
 time([[Config for vimwiki]], false)
 -- Config for: cmp-tabnine
 time([[Config for cmp-tabnine]], true)
-try_loadstring("\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\tsort\2\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\14max_lines\3è\a\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
+try_loadstring("\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\14max_lines\3è\a\tsort\2\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
 time([[Config for cmp-tabnine]], false)
 -- Config for: which-key.nvim
 time([[Config for which-key.nvim]], true)
