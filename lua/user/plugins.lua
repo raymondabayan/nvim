@@ -94,7 +94,6 @@ return packer.startup(function(use)
       },
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
   } 
-  use "junegunn/fzf"
 
   -- use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' } -- fzf port written in c
 

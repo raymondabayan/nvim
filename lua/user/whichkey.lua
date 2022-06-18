@@ -113,7 +113,7 @@ local mappings = {
   ["q"] = { '<cmd>lua require("user.functions").smart_quit()<CR>', "Quit" },
   -- ["/"] = { '<cmd>lua require("Comment.api").toggle_current_linewise()<CR>', "Comment" },
   ["."] = { ":Telescope file_browser<cr>", "Telescope File Browser"},
-  [","] = { ":FZF<cr>", "FZF" },
+  -- [","] = { ":Telescope find_files<cr>", "Telescope file finder" },
   --   "Find files",
   -- },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
@@ -195,7 +195,7 @@ local mappings = {
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
     f = {
-      "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+      "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = true})<cr>",
       "Find files",
     },
     t = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
