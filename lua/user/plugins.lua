@@ -49,6 +49,7 @@ return packer.startup(function(use)
   use "norcalli/nvim-colorizer.lua" -- adds color to hex codes
   use "kyazdani42/nvim-web-devicons" -- Nice icons used by a lot of plugins (must use a nerd font to make them display nicely
   -- -> Frame features
+  use "xiyaowong/nvim-transparent"
   use {
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
