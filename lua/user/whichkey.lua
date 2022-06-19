@@ -108,8 +108,10 @@ local mappings = {
   --   "Buffers",
   -- },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  ["w"] = { "<cmd>w<CR>", "Write" },
-  ["h"] = { "<cmd>nohlsearch<CR>", "No HL" },
+  -- ["w"] = { "<cmd>HopWord<cr>", "Hop Word" },
+  -- ["h"] = { "<cmd>nohlsearch<CR>", "No HL" },
+  -- ["h"] = { "<cmd>HopChar1<cr>", "Hop 1 Char"},
+  -- ["H"] = { "<cmd>HopChar2<cr>", "Hop 2 Char"}
   ["q"] = { '<cmd>lua require("user.functions").smart_quit()<CR>', "Quit" },
   -- ["/"] = { '<cmd>lua require("Comment.api").toggle_current_linewise()<CR>', "Comment" },
   ["."] = { ":Telescope file_browser<cr>", "Telescope File Browser"},
@@ -239,6 +241,15 @@ local mappings = {
       l = { "<cmd>Gist -l<cr>", "List" },
       p = { "<cmd>Gist -b -p<cr>", "Create Private" },
     },
+  },
+
+  h = {
+    name = "Hop",
+    c = { "<cmd>HopChar1<cr>", "Hop 1 Char"},
+    C = { "<cmd>HopChar2<cr>", "Hop 2 Char"},
+    w = { "<cmd>HopWord<cr>", "Hop Word"},
+    W = { "<cmd>HopWordCurrentLine<cr>", "Hop Word in Line"},
+
   },
 
   l = {
