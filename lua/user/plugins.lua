@@ -149,6 +149,10 @@ return packer.startup(function(use)
 
   -- Org Mode
 
+  use {
+    "nvim-neorg/neorg",
+    requires = "nvim-lua/plenary.nvim"
+  }
   -- use {
   --   "nvim-neorg/neorg",
   --   config = function()
