@@ -41,6 +41,10 @@ keymap("n", "<leader>bp", ":bprevious<CR>", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 
+-- Hop around faster
+keymap("n", "f", ":HopChar1<cr>", opts)
+keymap("n", "F", ":HopWord<cr>", opts)
+
 -- Insert --
 
 -- Visual --
