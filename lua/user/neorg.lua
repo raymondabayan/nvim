@@ -1,7 +1,15 @@
 require('neorg').setup {
   load = {
         ["core.defaults"] = {},
-        ["core.norg.dirman"] = {},
+        ["core.norg.dirman"] = {
+      config = {
+        workspaces = {
+          work = "~/Dropbox/work",
+          school = "~/Dropbox/school",
+          personal = "~/Dropbox/personal"
+        },
+      },
+    },
         ["core.norg.completion"] = {},
         ["core.gtd.base"] = {},
         ["core.norg.qol.toc"] = {},
