@@ -45,6 +45,10 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "f", ":HopChar1<cr>", opts)
 keymap("n", "F", ":HopWord<cr>", opts)
 
+-- Move visual lines easily
+keymap("n", "j", "gj", opts)
+keymap("n", "k", "gk", opts)
+
 -- Insert --
 
 -- Visual --
