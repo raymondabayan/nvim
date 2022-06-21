@@ -178,24 +178,36 @@ return packer.startup(function(use)
   use "dhruvasagar/vim-table-mode"
   use "godlygeek/tabular"
 
-  -- Vimwiki
-  use {
-    "vimwiki/vimwiki",
+  -- -- Vimwiki
+use {
+    'vimwiki/vimwiki',
     config = function()
-      vim.g.vimwiki_list = {
-        {
-          path = "~/Dropbox/vimwiki/",
-          syntax = "markdown",
-          ext = ".md",
+        vim.g.vimwiki_list = {
+            {
+                path = '~/Dropbox/vimwiki',
+                -- syntax = 'markdown',
+                -- ext = '.md',
+            }
         }
-      }
-      vim.g.vimwiki_ext2syntax = {
-        [".md"] = "markdown",
-        [".markdown"] = "markdown",
-        [".mdown"] = "markdown",
-      }
     end
-  }
+}
+  -- use {
+  --   "vimwiki/vimwiki"
+  --   -- config = function()
+  --   --   vim.g.vimwiki_list = {
+  --   --     {
+  --   --       path = "~/Dropbox/vimwiki/",
+  --   --       -- syntax = "markdown",
+  --   --       -- ext = ".md",
+  --   --     }
+  --   --   -- }
+  --   --   -- vim.g.vimwiki_ext2syntax = {
+  --   --   --   [".md"] = "markdown",
+  --   --   --   [".markdown"] = "markdown",
+  --   --   --   [".mdown"] = "markdown",
+  --   --   -- }
+  --   -- end
+  -- }
   use {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
