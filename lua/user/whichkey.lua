@@ -285,7 +285,7 @@ local mappings = {
     t = { '<cmd>lua require("user.functions").toggle_diagnostics()<cr>', "Toggle Diagnostics" },
   },
 
-  s = {
+  S = {
     name = "Surround",
     ["."] = { "<cmd>lua require('surround').repeat_last()<cr>", "Repeat" },
     a = { "<cmd>lua require('surround').surround_add(true)<cr>", "Add" },
@@ -302,20 +302,21 @@ local mappings = {
   --   d = { "<cmd>LoadCurrentDirSession!<cr>", "Load Last Dir" },
   -- },
     -- f = { "<cmd>Telescope sessions save_current=false<cr>", "Find Session" },
-  S = {
-    name = "Iron REPL",
-    c = { "<cmd>send_motion<cr>", "Send Motion" },
-    c = { "<cmd>visual_send<cr>", "Send Visual" },
-    f = { "<cmd>send_line<cr>", "Send Line" },
-    m = { "<cmd>send_mark<cr>", "Send Mark" },
-    m = { "<cmd>mark_visual<cr>", "Mark Visual" },
-    d = { "<cmd>remove_mark<cr>", "Remove Mark" },
-    r = { "<cmd>cr<cr>", "CR" },
-    i = { "<cmd>interrupt<cr>", "Interrupt" },
-    q = { "<cmd>exit<cr>", "Exit" },
-    l = { "<cmd>clear<cr>", "Clear" },
+  -- s = {
+  --   name = "Iron REPL",
+  --   s = { "<cmd>IronRepl<cr>", "Start Repl"},
+  --   c = { "<cmd>send_motion<cr>", "Send Motion" },
+  --   c = { "<cmd>visual_send<cr>", "Send Visual" },
+  --   f = { "<cmd>send_line<cr>", "Send Line" },
+  --   m = { "<cmd>send_mark<cr>", "Send Mark" },
+  --   m = { "<cmd>mark_visual<cr>", "Mark Visual" },
+  --   d = { "<cmd>remove_mark<cr>", "Remove Mark" },
+  --   r = { "<cmd>cr<cr>", "CR" },
+  --   i = { "<cmd>interrupt<cr>", "Interrupt" },
+  --   q = { "<cmd>exit<cr>", "Exit" },
+  --   l = { "<cmd>clear<cr>", "Clear" },
 
-  },
+  -- },
   -- s = {
   --   name = "SnipRun",
   --   c = { "<cmd>SnipClose<cr>", "Close" },
@@ -325,6 +326,11 @@ local mappings = {
   --   r = { "<cmd>SnipReset<cr>", "Reset" },
   --   t = { "<cmd>SnipRunToggle<cr>", "Toggle" },
   --   x = { "<cmd>SnipTerminate<cr>", "Terminate" },
+  -- },
+  -- s = {
+  --   name = "nvim-repl",
+  --   s = {"<cmd>ReplOpen<cr>", "Open Repl" },
+  --   l = {":<Plug>ReplSendLine", "Send Current Line" },
   -- },
 
   t = {

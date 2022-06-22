@@ -130,7 +130,8 @@ return packer.startup(function(use)
 
   -- Python Programming
   use "pappasam/nvim-repl"
-  use "hkupty/iron.nvim"
+  -- use "hkupty/iron.nvim"
+  -- use "jpalardy/vim-slime"
 
   -- R programming
   -- use "kevinhwang91/rnvimr"
