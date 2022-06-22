@@ -341,12 +341,14 @@ local mappings = {
     ["4"] = { ":4ToggleTerm<cr>", "4" },
     n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
     u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
-    t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
+    o = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
     p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
     r = { "<cmd>lua _R_TOGGLE()<cr>", "R"},
     f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
+    l = { "<cmd>:ToggleTermSendCurrentLine<cr>", "Send Current Line"},
+    -- v = { "<cmd>:ToggleTermSendVisualLines<cr>", "Send Visual Lines"},
   },
 
   T = {
@@ -365,6 +367,10 @@ local vopts = {
   nowait = true, -- use `nowait` when creating keymaps
 }
 local vmappings = {
+  t = {
+    t = { "<cmd>:ToggleTermSendVisualLines<cr>", "Send Visual Lines"},
+    t = { "<cmd>:ToggleTermSendVisualSelection<cr>", "Send Visual Selection"},
+  },
   -- ["/"] = { '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', "Comment" },
   -- s = { "<esc><cmd>'<,'>SnipRun<cr>", "Run range" },
 }
