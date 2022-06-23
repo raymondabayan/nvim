@@ -12,4 +12,8 @@ nmap <leader>sl <Plug>ReplSendLine
 vmap <leader>sl <Plug>ReplSendVisual
 ]]
 
+-- Python pyenv configuration
+vim.cmd[[
+let g:python3_host_prog = "/Users/raymondjohn/.pyenv/versions/py3nvim/bin/python"
+]]
 
