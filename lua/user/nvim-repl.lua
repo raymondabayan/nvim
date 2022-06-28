@@ -1,7 +1,7 @@
 vim.cmd [[
 let g:repl_filetype_commands = {
     \ 'javascript': 'node',
-    \ 'python': 'ipython',
+    \ 'python': 'python',
     \ 'R' : 'R',
     \ }
 
