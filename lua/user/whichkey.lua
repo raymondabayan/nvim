@@ -348,6 +348,8 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
     l = { "<cmd>:ToggleTermSendCurrentLine<cr>", "Send Current Line"},
+    -- c - { "<cmd>:!g++-11 %<cr>", "Compile C++ Buffer Contents"},
+    -- x = { "<cmd>:!./a.out<cr>", "Run ./a.out"},
     -- v = { "<cmd>:ToggleTermSendVisualLines<cr>", "Send Visual Lines"},
   },
 

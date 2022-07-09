@@ -86,6 +86,14 @@ keymap("n", "<esc><esc>", "<cmd>nohlsearch<cr>", opts)
 keymap("n", "<leader>bq", "<cmd>Bdelete!<CR>", opts)
 keymap("n", "<F2>", "<cmd>Telescope commands<CR>", opts)
 keymap("n", "<F3>", "<cmd>Telescope resume<cr>", opts)
+keymap("n", "<F4>", "<cmd>:!g++-11 %<CR>", opts)
+keymap("n", "<F5>", "<cmd>:!./a.out<CR>", opts)
+keymap("n", "<F6>", "<cmd>:Catppuccin latte<CR>", opts)
+keymap("n", "<F7>", "<cmd>:Catppuccin mocha<CR>", opts)
+-- keymap("n", "<F9>", "<cmd>:term g++-11 % && ./a.out<CR>", opts)
+keymap("n", "<F9>", "<cmd>:vsplit | term g++-11 % && ./a.out<CR>", opts)
+keymap("n", "<F10>", "<cmd>:split | term g++-11 % && ./a.out<CR>", opts)
+keymap("n", "<leader>fl", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 -- keymap(
 --   "n",
 --   "<leader>ff",

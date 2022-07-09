@@ -1,6 +1,7 @@
 -- Lua
-vim.g.catppuccin_flavour = "macchiato" -- latte, frappe, macchiato, mocha
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 vim.cmd[[colorscheme catppuccin]]
+
 --local colorscheme = "catpuccin"
 --
 --local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
@@ -8,3 +9,4 @@ vim.cmd[[colorscheme catppuccin]]
 --  vim.notify("colorscheme " .. colorscheme .. " not found!")
 --  return
 --end
+

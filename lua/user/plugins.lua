@@ -60,7 +60,7 @@ return packer.startup(function(use)
   use(
     {
       "catppuccin/nvim",
-      as = "catppucin",
+      as = "catppuccin",
     }
   ) -- nice theme that is a medium between solarized and normal, comes in 'frappe' (light), 'macchiato' (medium), 'mocha' (darker), and 'dusk' (very dark)
   -- Vim tools
@@ -174,7 +174,9 @@ return packer.startup(function(use)
 -- }
 
   use "nvim-orgmode/orgmode" -- The one and only
-  use "akinsho/org-bullets.nvim" -- fancy bullets for org files
+  -- use "akinsho/org-bullets.nvim" -- fancy bullets for org files
+  use "dkarter/bullets.vim"
+
   use { "michaelb/sniprun", run = "bash ./install.sh" } -- run code blocks
   use "dhruvasagar/vim-table-mode"
   use "godlygeek/tabular"
