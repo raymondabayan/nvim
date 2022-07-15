@@ -63,6 +63,12 @@ return packer.startup(function(use)
       as = "catppuccin",
     }
   ) -- nice theme that is a medium between solarized and normal, comes in 'frappe' (light), 'macchiato' (medium), 'mocha' (darker), and 'dusk' (very dark)
+  use 'projekt0n/github-nvim-theme'
+  use "ishan9299/modus-theme-vim"
+  use "tjdevries/colorbuddy.nvim"
+  use "NLKNguyen/papercolor-theme"
+
+  use 'cormacrelf/dark-notify'
   -- Vim tools
   use "tpope/vim-repeat" -- allows to repeat command in normal mode with '.'
   use "tpope/vim-commentary" -- quickly comment/uncomment with 'gc'
@@ -177,7 +183,7 @@ return packer.startup(function(use)
   -- use "akinsho/org-bullets.nvim" -- fancy bullets for org files
   use "dkarter/bullets.vim"
 
-  use { "michaelb/sniprun", run = "bash ./install.sh" } -- run code blocks
+  use { "michaelb/sniprun", run = "zsh ./install.sh" } -- run code blocks
   use "dhruvasagar/vim-table-mode"
   use "godlygeek/tabular"
 
