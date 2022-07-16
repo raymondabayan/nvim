@@ -56,7 +56,7 @@ return packer.startup(function(use)
 } -- statusline written in lua
   use "goolord/alpha-nvim" -- startup dashboard
   -- -> Colorschemes
-  use "morhetz/gruvbox" -- classic community retro theme
+  use { "ellisonleao/gruvbox.nvim" }
   use(
     {
       "catppuccin/nvim",
