@@ -67,6 +67,13 @@ return packer.startup(function(use)
   use "ishan9299/modus-theme-vim"
   use "tjdevries/colorbuddy.nvim"
   use "NLKNguyen/papercolor-theme"
+  use {
+    "mcchrish/zenbones.nvim",
+    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+    -- In Vim, compat mode is turned on as Lush only works in Neovim.
+    requires = "rktjmp/lush.nvim"
+  }
 
   use 'cormacrelf/dark-notify'
   -- Vim tools

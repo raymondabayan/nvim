@@ -10,6 +10,10 @@
 --   flavour = "mocha"
 -- }
 
+-- Zenbones colorschemes
+-- vim.cmd[[set background=light]]
+-- vim.cmd[[colorscheme zenbones]]
+
 -- Modus colorscheme
 vim.g.modus_green_strings = 1
 vim.g.modus_termtrans_enable = 1
